@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: rgb(254, 250, 228);
+    --clr-secondary: rgb(138, 156, 203);
+    --clr-primary-2: rgb(191, 184, 166);
+    --clr-secundary-2: rgb(36, 54, 108);
+    --foreground: var(--clr-secondary);
+    --background: var(--clr-primary);
+    --ff-title: "Libre Bodoni", serif;
+    --ff-body: "Gloria Hallelujah", sans-serif;
+}
+
+/* Esto es para cambiar el color cuando tienes el ordenador en dark o light screen computer thingy */
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --background: var(--clr-primary);
+        --foreground: var(--clr-secondary);
+    }
+} */
+
+body {
+    margin: 0;
+    padding-bottom: 4rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+    font-family: var(--ff-body);
+    /* font-size: 18px; */
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: var(--ff-title);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--clr-secondary);
+    transition: 1s;
+}
+
+a:hover {
+    color: var(--clr-secundary-2);
+    
+}
+
+.fs-1 {
+    font-size: 6rem !important;
+}
+
+.fs-2 {
+    font-size: 5rem !important;
+}
+
+.fs-3 {
+    font-size: 2.5rem !important;
+}
+
+p, a {
+    font-family: var(--ff-body);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* LIGHTBOX */
+.modal {
+    background-color: var(--clr-primary);
+}
+
+/* NO ME ESTA SALIENDOOO CRYING */
+
+.modal-dialog {
+    width: 80vh;
+}
+
+.modal-content {
+    border-style: none;
+    height: 80vh;
+}
+
+.modal.show > .modal-dialog {
+    border-style: none;
+    width: 80vh;
+}
+
+.modal-body {
+    border-style: none;
+    
+}
+
+/* .subtitle {
+    max-width: 600px;
+}
+
+.btn-group {
+    margin: 2rem 0;
+    display: block !important;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block !important;
+    line-height: 1;
+}
+
+.btn + .btn {
+    margin-left: 1rem;
+}
+
+.btn-secondary {
+    background: var(--foreground);
+    color: var(--background);
+}
+
+.btn-accent {
+    background: var(--clr-accent);
+    color: var(--foreground);
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: var(--foreground) 2px solid;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+    z-index: -1;
+} */
+
+.intro {
+    height: 80vh;
+    padding: 10rem 0;
+    display: grid;
+    grid-template-columns: minmax(2em, 1fr) minmax(80vw, 860px) minmax(2em, 1fr);
+    background: linear-gradient(120deg, var(--clr-primary), var(--clr-secondary));
+    align-content: center;
+}
+
+.intro > * {
+    grid-column: 2/3;
+}
+
+#element, .typed-cursor {
+    font-size: 2rem;
+}
