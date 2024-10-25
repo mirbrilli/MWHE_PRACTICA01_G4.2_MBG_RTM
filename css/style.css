@@ -45,6 +45,13 @@ a {
     transition: 1s;
 }
 
+/* ESTO LO TENGO Q LUEGO CUANDO TENGA EL NAV, PERO ES PARA Q ME ACUERDE*/
+.lasgatas {
+    font-family: var(--ff-title);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 a:hover {
     color: var(--clr-secundary-2);
     
