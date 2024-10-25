@@ -29,15 +29,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <!-- HEADER/MENU BAR -->
     <header>
-       
-    </header>
+     <!-- MENU HAMBURGUESA -->
+        <nav class="navbar mi-color-fondo px-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa-solid fa-bars icon-custom fa-4x" aria-hidden="true"></span>
+                </button>
+ 
+                <!-- TEXTO LAS GATAS -->
+                <a class="fs-2 navbar-text text-truncate" aria-current="page" href="index.html">LAS GATAS</a>
+             
+                <!-- CARRITO DE COMPRA -->
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-cart-shopping icon-custom fa-4x" aria-hidden="true"></i>
+                </a>
+ 
+                <!-- OPCIONES MENU DESPLEGABLE -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="fs-4 navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <!-- SUPER DUPER IMPORTANTE, CUANDO PONGAS HREF TIENES QUE PONERLO CON LA PÁGINA (HTML) QUE HEMOS HECHO -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="lasgatas.html">LAS GATAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GASTRONOMIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ARTE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">OCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">VIDEOBLOGS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">REVISTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LUGARES</a>
+                        </li>
+                    </ul> 
+                </div>
+            </div> 
+         </nav> 
+     </header>
     
     <main class="justify-content-center">
         <!-- LAS GATAS -->
