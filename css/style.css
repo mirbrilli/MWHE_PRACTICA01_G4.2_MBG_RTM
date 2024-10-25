@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    border:1px solid magenta;
 }
 
 :root {
@@ -45,18 +46,8 @@ a {
     transition: 1s;
 }
 
-/* ESTO LO TENGO Q LUEGO CUANDO TENGA EL NAV, PERO ES PARA Q ME ACUERDE*/
-.lasgatas {
-    font-family: var(--ff-title);
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-}
-
-a:hover {
-    color: var(--clr-secundary-2);
-    
-}
-
+/* _________________________ */
+/* TEXTO */
 .fs-1 {
     font-size: 6rem !important;
 }
@@ -66,6 +57,10 @@ a:hover {
 }
 
 .fs-3 {
+    font-size: 4rem !important;
+}
+
+.fs-4 {
     font-size: 2.5rem !important;
 }
 
@@ -75,7 +70,45 @@ p, a {
     margin-bottom: 2rem;
 }
 
-/* LIGHTBOX */
+a:hover {
+    color: var(--clr-secundary-2);  
+}
+
+/* _________________________ */
+/* MENU */
+.mi-color-fondo {
+    background-color: var(--clr-secondary)!important;
+}
+
+.navbar-toggler {
+    border-color: var(--clr-secundary-2);
+} 
+
+.card-img-top {
+    height: 100vh !important;
+}
+
+/* CAMBIAR COLOR CUANDO HACES HOVER */
+.nav-link:hover {
+    color: var(--clr-secundary-2); 
+}
+.navbar-text, a.nav-link {
+    font-family: var( --ff-title);
+    display: flex;
+    justify-content: center;
+    color: var(--clr-primary);
+    margin: 0;
+    
+}
+
+/* _________________________ */
+/* LAS GATAS */
+.lasgatas {
+    font-family: var(--ff-title);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 .modal {
     background-color: var(--clr-primary);
 }
