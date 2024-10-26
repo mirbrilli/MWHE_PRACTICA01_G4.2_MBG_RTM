@@ -8,9 +8,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // TYPED JS
+    // var typed = new Typed('#element', {
+    //   strings: ['Hola!', 'Somos Miriam, Marina y Rosa', 'Unas chicas que viajan el mundo y lo documentan', '¿Estás listo?', '¡INCIAR LA AVENTURA!'],
+    //   typeSpeed: 50,
+    //   loop: Infinity,
+    // });
     var typed = new Typed('#element', {
-      strings: ['Hola!', 'Somos Miriam, Marina y Rosa', 'Unas chicas que viajan el mundo y lo documentan', '¿Estás listo?', '¡INCIAR LA AVENTURA!'],
+      strings: ['Hola!', 'Somos Miriam, Marina y Rosa', 'Unas chicas que viajan el mundo y lo documentan', '¿Estás listo?'],
       typeSpeed: 50,
-      loop: Infinity,
+      backSpeed: 0,
+      backDelay: 1000,
+      showCursor: false,
+      onComplete: function() {
+        // Espera un segundo (1000 ms) y luego reemplaza el texto con un botón
+        setTimeout(function() {
+          document.getElementById("element").innerHTML = '<button onclick="miFuncion()">INICIAR LA AVENTURA</button>';
+        }, 1000);
+      }
     });
 });

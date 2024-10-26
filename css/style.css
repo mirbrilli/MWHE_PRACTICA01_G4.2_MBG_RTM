@@ -92,6 +92,22 @@ a:hover {
     height: 100vh !important;
 }
 
+
+#element button {
+display: flex;
+justify-content: center;
+}
+
+
+.typejs {
+    color:var(--clr-primary);
+    transform: translate(-50%, -50%);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
 /* CAMBIAR COLOR CUANDO HACES HOVER */
 .nav-link:hover {
     color: var(--clr-secundary-2); 
@@ -104,7 +120,6 @@ a:hover {
     margin: 0;
     
 }
-
 /* _________________________ */
 /* LAS GATAS */
 .lasgatas {
@@ -140,7 +155,8 @@ a:hover {
 
 /* _________________________ */
 /* GASTRONOMÍA */
-.carousel_gastronomia > div > a {
+/* YO DIRIA DE SUBIR ESTO ARRIBA PARA BOTONES  */
+#element button, .carousel_gastronomia > div > a {
     background-color: var(--clr-primary-2)!important;
     font-family: var(--ff-title) !important;
     border-style: none;
@@ -221,6 +237,4 @@ a:hover {
     grid-column: 2/3;
 }
 
-#element, .typed-cursor {
-    font-size: 2rem;
-}
+
