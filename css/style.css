@@ -64,6 +64,10 @@ a {
     font-size: 2.5rem !important;
 }
 
+.fs-5 {
+    font-size: 2rem !important;
+}
+
 p, a {
     font-family: var(--ff-body);
     margin-top: 2rem;
@@ -133,6 +137,31 @@ a:hover {
     border-style: none;
     
 }
+
+/* _________________________ */
+/* GASTRONOMÍA */
+.carousel_gastronomia > div > a {
+    background-color: var(--clr-primary-2)!important;
+    font-family: var(--ff-title) !important;
+    border-style: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 0 !important;
+    width: 100%;
+}
+
+.btn-gastronomia:hover {
+    background-color: var(--clr-secondary)!important;
+}
+
+.carousel_gastronomia {
+    width: 80%;
+}
+
+
+
+
+
 
 /* .subtitle {
     max-width: 600px;
