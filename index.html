@@ -32,6 +32,9 @@
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -133,19 +136,46 @@
         <section>
             <h2 class="fs-2 text-center">GASTRONOMÍA</h2>
 
-            <div id="carouselExample" class="carousel slide">
-
-                <!-- D-FLEX SUPERRRR IMPORNTATEEEE Y TEGNO Q PONERLO TODO BEIN -->
-                
+            <div id="carouselgastronomia" class="carousel slide">
                 <div class="carousel-inner d-flex justify-content-center">
                     <!-- DESAYUNO -->
                     <div>
                         <div class="carousel-item active">
                             <div class="carousel_gastronomia row px-5 justify-content-center mx-auto">
+
+                                <!-- Bô Coffee -->
                                 <div class="col-md-4 col-sm-12 px-4 d-flex flex-column align-items-center">
                                     <img src="media/img/GASTRONOMIA/Bô Coffee.png" class="img-fluid mb-5" alt="Bô Coffee">
-                                    <a class="btn-gastronomia fs-5 btn btn-primary d-flex justify-content-center" href="#" role="button">Bô Coffee</a>
+                                    <a class="btn-gastronomia fs-5 btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#boCoffeeModal" role="button">Bô Coffee</a>
                                 </div>
+
+                                <div class="modal fade" id="boCoffeeModal" tabindex="-1" aria-labelledby="boCoffeeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <h2 class="modal-title" id="boCoffeeModalLabel mb-3">Bô Coffee</h2>
+                                            <img src="media/img/GASTRONOMIA/Bô Coffee.png" class="img-fluid" alt="Bô Coffee">
+                                            <p>
+                                                Localización:
+                                                <br>
+                                                C. de Espronceda, 16, Chamberí, 28003 Madrid
+                                                <br>
+                                                <br>
+                                                Precio:
+                                                <br>
+                                                Entre 10-20 €
+                                                <br>
+                                                <br>
+                                                Una cafetería donde nos podemos tomar
+                                                uno de los mejores cafés de Madrid
+                                                acompañados de su especialidad, sus
+                                                famosas torres de tortitas.
+                                            </p>
+                                            <a href="https://www.instagram.com/bocoffeemadrid/?hl=es" class="btn btn-primary">Más Información</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Café del Art -->
                                 <div class="col-md-4 col-sm-12 px-4 d-flex flex-column align-items-center">
                                     <img src="media/img/GASTRONOMIA/Cafe del Art.png" class="img-fluid mb-5" alt="Café del Art">
                                     <a class="btn-gastronomia fs-5 btn btn-primary d-flex justify-content-center" href="#" role="button">Café del Art</a>
@@ -164,15 +194,15 @@
                         <div class="carousel-item">
                             <div class="carousel_gastronomia row px-5 justify-content-center mx-auto">
                                 <div class="col-md-4 col-sm-12 px-4 d-flex flex-column align-items-center">
-                                    <img src="media/img/GASTRONOMIA/Bô Coffee.png" class="img-fluid mb-5" alt="La Gran Tasca">
+                                    <img src="media/img/GASTRONOMIA/La Gran Tasca.png" class="img-fluid mb-5" alt="La Gran Tasca">
                                     <a class="btn-gastronomia fs-5 btn btn-primary d-flex justify-content-center" href="#" role="button">La Gran Tasca</a>
                                 </div>
                                 <div class="col-md-4 col-sm-12 px-4 d-flex flex-column align-items-center">
-                                    <img src="media/img/GASTRONOMIA/Cafe del Art.png" class="img-fluid mb-5" alt="La Maruca">
+                                    <img src="media/img/GASTRONOMIA/La Maruca.png" class="img-fluid mb-5" alt="La Maruca">
                                     <a class="btn-gastronomia fs-5 btn btn-primary d-flex justify-content-center" href="#" role="button">La Maruca</a>
                                 </div>
                                 <div class="col-md-4 col-sm-12 px-4 d-flex flex-column align-items-center">
-                                    <img src="media/img/GASTRONOMIA/Clima Cafecito.png" class="img-fluid mb-5" alt="Patio de Leones">
+                                    <img src="media/img/GASTRONOMIA/Patio de Leones.png" class="img-fluid mb-5" alt="Patio de Leones">
                                     <a class="btn-gastronomia fs-5 btn btn-primary d-flex justify-content-center" href="#" role="button">Patio de Leones</a>
                                 </div>
                             </div>
@@ -204,15 +234,15 @@
                         <div class="carousel-item">
                             <div class="carousel_gastronomia row px-5 justify-content-center mx-auto">
                                 <div class="col-md-4 col-sm-12 px-4 d-flex flex-column align-items-center">
-                                    <img src="media/img/GASTRONOMIA/Oakberry Açai.png" class="img-fluid mb-5" alt="Vicio">
+                                    <img src="media/img/GASTRONOMIA/Vicio.png" class="img-fluid mb-5" alt="Vicio">
                                     <a class="btn-gastronomia fs-5 btn btn-primary d-flex justify-content-center" href="#" role="button">Vicio</a>
                                 </div>
                                 <div class="col-md-4 col-sm-12 px-4 d-flex flex-column align-items-center">
-                                    <img src="media/img/GASTRONOMIA/Mimi’s Crêperie.png" class="img-fluid mb-5" alt="Baldoria">
+                                    <img src="media/img/GASTRONOMIA/Baldoria.png" class="img-fluid mb-5" alt="Baldoria">
                                     <a class="btn-gastronomia fs-5 btn btn-primary d-flex justify-content-center" href="#" role="button">Baldoria</a>
                                 </div>
                                 <div class="col-md-4 col-sm-12 px-4 d-flex flex-column align-items-center">
-                                    <img src="media/img/GASTRONOMIA/La Romana.png" class="img-fluid mb-5" alt="La Romanas">
+                                    <img src="media/img/GASTRONOMIA/Bar Gyoza Go.png" class="img-fluid mb-5" alt="La Romanas">
                                     <a class="btn-gastronomia fs-5 btn btn-primary d-flex justify-content-center" href="#" role="button">Bar Gyoza Go</a>
                                 </div>
                             </div>
@@ -241,12 +271,12 @@
                 </div>
 
                 <!-- BOTONES -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselgastronomia" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselgastronomia" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
