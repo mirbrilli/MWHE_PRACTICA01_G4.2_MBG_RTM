@@ -79,47 +79,62 @@ a:hover {
 }
 
 /* _________________________ */
-/* MENU */
+/* HEADER */
+.title_container {
+    font-family: var(--ff-title);
+    color: var(--clr-primary);
+    top: 55%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+}
+
+.line1, .line2 {
+    margin: 0; 
+    font-size: 10rem;
+}
+
+.line2 {
+    margin-left: 25rem;
+}
+
+#element button {
+    background-color: var(--clr-primary-2)!important;
+    font-family: var(--ff-title) !important;
+    border-style: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 0 !important;
+    width: 100%
+}
+
+.typejs  {
+    color:var(--clr-primary);
+    font-family: var(--ff-body);
+    /* transform: translate(-50%, -50%);
+    position:absolute;
+    top: 50%;
+    left: 50%; */
+}
+/* MENU BAR */
 .mi-color-fondo {
     background-color: var(--clr-secondary)!important;
 }
-
 .navbar-toggler {
     border-color: var(--clr-secundary-2);
 } 
 
-.card-img-top {
-    height: 100vh !important;
+.navbar,.navbar-toggler, .navbar-brand {
+    color: var(--clr-primary);   
 }
-
-
-#element button {
-display: flex;
-justify-content: center;
+.navbar-brand, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    font-family: var(--ff-title);
+    color: var(--clr-primary); 
+    margin:0;
 }
-
-
-.typejs {
-    color:var(--clr-primary);
-    transform: translate(-50%, -50%);
-    position:absolute;
-    top: 50%;
-    left: 50%;
-}
-
-
-/* CAMBIAR COLOR CUANDO HACES HOVER */
 .nav-link:hover {
     color: var(--clr-secundary-2); 
 }
-.navbar-text, a.nav-link {
-    font-family: var( --ff-title);
-    display: flex;
-    justify-content: center;
-    color: var(--clr-primary);
-    margin: 0;
-    
-}
+
 /* _________________________ */
 /* LAS GATAS */
 .lasgatas {
@@ -236,5 +251,60 @@ justify-content: center;
 .intro > * {
     grid-column: 2/3;
 }
+/* _________________________ */
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+    /* INDEX.HTML */
+     /* HEADER  */
+     /* MENU  */
+     .icon-custom, .navbar-brand  {
+        font-size: 4rem !important;   
+    } 
+     .fs-2 {
+        font-size: 3.5rem !important;
+     }
+     
 
+}
+@media screen and (max-width: 700px) {
+    /* INDEX.HTML */
+     /* HEADER  */
+     /* MENU  */
+     .icon-custom, .navbar-brand  {
+        font-size: 3rem !important;   
+    } 
+     .fs-2 {
+        font-size: 2.5rem !important;
+     }
+     
+
+}
+
+     
+@media screen and (max-width: 500px) {
+    /* INDEX.HTML */
+     /* HEADER  */
+     /* .icon-custom, .navbar-brand  {
+        font-size: 2rem !important;   
+    } 
+     .fs-2 {
+        font-size: 1.5rem !important;
+     }
+     .fs-4 {
+        font-size: 2rem !important;
+     } */
+     /* MENU  */
+     
+
+}
+@media screen and (max-width: 400px) {
+    /* INDEX.HTML */
+     /* HEADER  */
+    
+     /* MENU  */
+     /* .icon-custom, .navbar-brand  {
+        font-size: 2rem !important;   
+    }  */
+
+}
 

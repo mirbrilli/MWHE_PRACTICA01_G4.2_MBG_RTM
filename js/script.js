@@ -6,15 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     $("#myBtn").click(function(){
         alert("Has hecho click!");
     });
-
-    // TYPED JS
-    // var typed = new Typed('#element', {
-    //   strings: ['Hola!', 'Somos Miriam, Marina y Rosa', 'Unas chicas que viajan el mundo y lo documentan', '¿Estás listo?', '¡INCIAR LA AVENTURA!'],
-    //   typeSpeed: 50,
-    //   loop: Infinity,
-    // });
+    // TYPE JS
     var typed = new Typed('#element', {
-      strings: ['Hola!', 'Somos Miriam, Marina y Rosa', 'Unas chicas que viajan el mundo y lo documentan', '¿Estás listo?'],
+      strings: ['Hola!', 'Somos Miriam, Marina y Rosa', 'Unas chicas que viajan', 'y lo documentan', '¿Estás listo?'],
       typeSpeed: 50,
       backSpeed: 0,
       backDelay: 1000,
