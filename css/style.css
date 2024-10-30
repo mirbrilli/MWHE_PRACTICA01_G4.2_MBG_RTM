@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    border:1px solid magenta;
+    /* border:1px solid magenta; */
 }
 
 :root {
@@ -81,7 +81,7 @@ a:hover {
 /* INDEX.HTML */
 /* HEADER */
 .card-img, .card-img-bottom, .card-img-top {
-    max-height: 86vh;
+    max-height: 100vh;
     width: 100%;
 }
 .title_container {
@@ -119,6 +119,7 @@ a:hover {
     margin: 0 !important;
     width: 100%;
 } 
+
 /* _________________________ */
 /* MENU BAR */
 .mi-color-fondo {
@@ -148,6 +149,7 @@ a:hover {
 .darkblue {
     color: var(--clr-secundary-2); 
 }
+
 /* _________________________ */
 /* LAS GATAS */
 .lasgatas {
@@ -236,7 +238,12 @@ a:hover {
 }
 
 .carousel_gastronomia > div > div > div > a:hover {
-    background-color: var(--clr-secondary)!important;
+    background-color: var(--clr-primary)!important;
+    color: var(--clr-secondary)!important;
+}
+
+.modal {
+    background-color: rgb(254 250 228 / 80%);
 }
 
 .modal-content {
@@ -248,13 +255,6 @@ a:hover {
 .modal-backdrop.show {
     opacity: 0 !important; /* Remove backdrop darkening */
 }
-
-
-
-
-
-
-
 
 /* BOTONES */
 .carousel-control-prev-icon {
@@ -273,13 +273,36 @@ a:hover {
     color: var(--clr-secondary);
 }
 
+/* _________________________ */
+/* VIDEOBLOGS */
+.videoblogs {
+    display: flex;
+    flex-direction: column !important;
+}
+.videoblogs > iframe {
+    width: 73%;
+    height: 70vh;
+    border-radius: 3em;
+    margin-bottom: 3rem;
+}
 
+.videoblogs > a {
+    background-color: var(--clr-primary-2)!important;
+    font-family: var(--ff-title) !important;
+    font-size: 2rem;
+    border-style: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 0 !important;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
-
-
-
-
+.videoblogs > a:hover {
+    background-color: var(--clr-secondary)!important;
+}
 
 
 /* .subtitle {
@@ -387,23 +410,35 @@ footer {
     color: var(--clr-primary);
     font-family: var(--ff-title);
     }
-    .footer-container-2 {
-        background-color: var(--clr-secundary-2); 
-    
-    }
-    footer h3, footer p {
-        font-family: var(--ff-title);
-        margin-top: 3rem;
-    }
-    footer a {
-        color: var(--clr-primary);
-        text-decoration: none;
-        display: block;
-        font-family: var(--ff-title);
-    }
-    footer a:hover {
-        text-decoration: underline;
-    }
+
+.footer-container-2 {
+    background-color: var(--clr-secundary-2); 
+}
+
+footer h3, footer p {
+    font-family: var(--ff-title);
+    margin-top: 3rem;
+}
+
+footer a {
+    color: var(--clr-primary);
+    text-decoration: none;
+    display: block;
+    font-family: var(--ff-title);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-container > div {
+    margin-right: 0;
+}
+
+
+
+
+
 /* _________________________ */
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
