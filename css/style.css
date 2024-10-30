@@ -274,6 +274,19 @@ a:hover {
 }
 
 /* _________________________ */
+/* ARTE y OCIO*/
+.texto_arte, .texto_ocio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto_arte > p, .texto_ocio > p {
+    width: 50%;
+}
+
+
+/* _________________________ */
 /* VIDEOBLOGS */
 .videoblogs {
     display: flex;
