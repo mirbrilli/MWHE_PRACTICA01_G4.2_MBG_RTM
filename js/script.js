@@ -3,9 +3,9 @@ html.setAttribute("data-bs-theme", "dark");
 
 document.addEventListener("DOMContentLoaded", () => {
     // EVENTO Y EFECTO CON JQUERY
-    $("#myBtn").click(function(){
-        alert("Has hecho click!");
-    });
+    // $("#myBtn").click(function(){
+    //     alert("Has hecho click!");
+    // });
     // TYPE JS
     var typed = new Typed('#element', {
       strings: ['Hola!', 'Somos Miriam, Marina y Rosa', 'Unas chicas que viajan', 'y lo documentan', '¿Estás listo?'],
@@ -20,4 +20,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1000);
       }
     });
+    
 });

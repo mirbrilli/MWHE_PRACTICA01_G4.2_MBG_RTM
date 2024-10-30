@@ -26,7 +26,6 @@
 
 body {
     margin: 0;
-    padding-bottom: 4rem;
     background-color: var(--clr-primary);
     color: var(--clr-secondary);
     font-family: var(--ff-body);
@@ -79,24 +78,38 @@ a:hover {
 }
 
 /* _________________________ */
+/* INDEX.HTML */
 /* HEADER */
+.card-img, .card-img-bottom, .card-img-top {
+    max-height: 86vh;
+    width: 100%;
+}
 .title_container {
-    font-family: var(--ff-title);
+    top: 44%;
     color: var(--clr-primary);
-    top: 55%;
-    left: 50%;
-    transform: translate(-55%, -50%);
+    font-family: var(--ff-title);
 }
-
-.line1, .line2 {
-    margin: 0; 
+.line1,.line2 {
+    display: block;
+    line-height: 1;
     font-size: 10rem;
-}
 
+}
 .line2 {
-    margin-left: 25rem;
-}
+    margin-left: 14rem; 
+} 
 
+/* TYPE JS Y BOTÓN */
+.type-container {
+    position: absolute;
+    top: 62%;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.typejs  {
+    color:var(--clr-primary);
+    font-family: var(--ff-body);
+} 
 #element button {
     background-color: var(--clr-primary-2)!important;
     font-family: var(--ff-title) !important;
@@ -104,35 +117,24 @@ a:hover {
     padding: 0.5em;
     border-radius: 1em;
     margin: 0 !important;
-    width: 100%
-}
-
-.typejs  {
-    color:var(--clr-primary);
-    font-family: var(--ff-body);
-    /* transform: translate(-50%, -50%);
-    position:absolute;
-    top: 50%;
-    left: 50%; */
-}
-
-.card-img-top {
     width: 100%;
-    height: 100vh;
-}
-
+} 
+/* _________________________ */
 /* MENU BAR */
 .mi-color-fondo {
     background-color: var(--clr-secondary)!important;
 }
+/* MENU LUGARES */
+.mi-color-fondo-2 {
+    background-color: var(--clr-secundary-2)!important;
+}
 .navbar-toggler {
     border-color: var(--clr-secundary-2);
 } 
-
 .navbar,.navbar-toggler, .navbar-brand {
     color: var(--clr-primary);   
 }
-.navbar-brand, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-brand, .navbar-nav .nav-link.active,.nav-link-2.active, .navbar-nav .nav-link.show {
     font-family: var(--ff-title);
     color: var(--clr-primary); 
     margin:0;
@@ -140,7 +142,12 @@ a:hover {
 .nav-link:hover {
     color: var(--clr-secundary-2); 
 }
-
+.nav-link-2:hover {
+    color: var(--clr-primary-2); 
+}
+.darkblue {
+    color: var(--clr-secundary-2); 
+}
 /* _________________________ */
 /* LAS GATAS */
 .lasgatas {
@@ -333,59 +340,31 @@ a:hover {
     grid-column: 2/3;
 }
 /* _________________________ */
-/* MEDIA QUERIES */
-@media screen and (max-width: 900px) {
-    /* INDEX.HTML */
-     /* HEADER  */
-     /* MENU  */
-     .icon-custom, .navbar-brand  {
-        font-size: 4rem !important;   
-    } 
-     .fs-2 {
-        font-size: 3.5rem !important;
-     }
-     
 
-}
-@media screen and (max-width: 700px) {
-    /* INDEX.HTML */
-     /* HEADER  */
-     /* MENU  */
-     .icon-custom, .navbar-brand  {
-        font-size: 3rem !important;   
-    } 
-     .fs-2 {
-        font-size: 2.5rem !important;
-     }
-     
-
-}
-
-     
-@media screen and (max-width: 500px) {
-    /* INDEX.HTML */
-     /* HEADER  */
-     /* .icon-custom, .navbar-brand  {
-        font-size: 2rem !important;   
-    } 
-     .fs-2 {
-        font-size: 1.5rem !important;
-     }
-     .fs-4 {
-        font-size: 2rem !important;
-     } */
-     /* MENU  */
-     
-
-}
-@media screen and (max-width: 400px) {
-    /* INDEX.HTML */
-     /* HEADER  */
+/* _________________________ */
+/* FOOTER */
+footer {
+    background-color: var(--clr-secondary);  
+    color: var(--clr-primary);
+    font-family: var(--ff-title);
+    }
+    .footer-container-2 {
+        background-color: var(--clr-secundary-2); 
     
-     /* MENU  */
-     /* .icon-custom, .navbar-brand  {
-        font-size: 2rem !important;   
-    }  */
+    }
+    footer h3, footer p {
+        font-family: var(--ff-title);
+        margin-top: 3rem;
+    }
+    footer a {
+        color: var(--clr-primary);
+        text-decoration: none;
+        display: block;
+        font-family: var(--ff-title);
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+/* _________________________ */
 
-}
 
