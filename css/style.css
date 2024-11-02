@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    /* border:1px solid magenta; */
+    border:1px solid magenta;
 }
 
 :root {
@@ -76,7 +76,27 @@ p, a {
 a:hover {
     color: var(--clr-secundary-2);  
 }
+/* _________________________ */
+/* BOTONES GENERALES */
+#element button, .carousel_gastronomia > div > a, .btn-lugar_revista, .btn-rrss {
+    background-color: var(--clr-primary-2)!important;
+    font-family: var(--ff-title) !important;
+    border-style: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 0 !important;
+}
+#element button, .carousel_gastronomia > div > a, .btn-rrss {
+    width: 100%;
+}
+.btn-lugar_revista {
+    width: 50%;
+    align-items: center;
+}
 
+.btn-gastronomia:hover,.btn-lugar_revista:hover {
+    background-color: var(--clr-secondary)!important;
+}
 /* _________________________ */
 /* INDEX.HTML */
 /* HEADER */
@@ -85,18 +105,17 @@ a:hover {
     width: 100%;
 }
 .title_container {
-    top: 44%;
+    top: 50%;
     color: var(--clr-primary);
     font-family: var(--ff-title);
 }
 .line1,.line2 {
     display: block;
     line-height: 1;
-    font-size: 10rem;
 
 }
 .line2 {
-    margin-left: 14rem; 
+    margin-left: 9rem; 
 } 
 
 /* TYPE JS Y BOTÓN */
@@ -110,15 +129,9 @@ a:hover {
     color:var(--clr-primary);
     font-family: var(--ff-body);
 } 
-#element button {
-    background-color: var(--clr-primary-2)!important;
-    font-family: var(--ff-title) !important;
-    border-style: none;
-    padding: 0.5em;
-    border-radius: 1em;
-    margin: 0 !important;
-    width: 100%;
-} 
+#element button:hover{
+    background-color: var(--clr-secundary-2)!important;
+}
 
 /* _________________________ */
 /* MENU BAR */
@@ -126,30 +139,26 @@ a:hover {
     background-color: var(--clr-secondary)!important;
 }
 /* MENU LUGARES */
-.mi-color-fondo-2 {
+.mi-color-fondo-2, .accordion-item {
     background-color: var(--clr-secundary-2)!important;
 }
 .navbar-toggler {
     border-color: var(--clr-secundary-2);
 } 
 .navbar,.navbar-toggler, .navbar-brand {
-    color: var(--clr-primary);   
+    color: var(--clr-primary);
 }
 .navbar-brand, .navbar-nav .nav-link.active,.nav-link-2.active, .navbar-nav .nav-link.show {
     font-family: var(--ff-title);
     color: var(--clr-primary); 
     margin:0;
 }
-.nav-link:hover {
+.nav-link:hover, .darkblue {
     color: var(--clr-secundary-2); 
 }
 .nav-link-2:hover {
     color: var(--clr-primary-2); 
 }
-.darkblue {
-    color: var(--clr-secundary-2); 
-}
-
 /* _________________________ */
 /* LAS GATAS */
 .lasgatas {
@@ -183,20 +192,6 @@ a:hover {
 
 /* _________________________ */
 /* GASTRONOMÍA */
-#element button, .carousel_gastronomia > div > a {
-    background-color: var(--clr-primary-2)!important;
-    font-family: var(--ff-title) !important;
-    border-style: none;
-    padding: 0.5em;
-    border-radius: 1em;
-    margin: 0 !important;
-    width: 100%;
-}
-
-.btn-gastronomia:hover {
-    background-color: var(--clr-secondary)!important;
-}
-
 .carousel_gastronomia {
     width: 80%;
 }
@@ -256,7 +251,7 @@ a:hover {
     opacity: 0 !important; /* Remove backdrop darkening */
 }
 
-/* BOTONES */
+/* BOTONES CAROUSEL*/
 .carousel-control-prev-icon {
     color: var(--clr-primary-2);
 }
@@ -284,6 +279,10 @@ a:hover {
 .texto_arte > p, .texto_ocio > p {
     width: 50%;
 }
+.gatas-container-fluid, .ocio-container-fluid, .arte-container-fluid, .accordion {
+    width: 80% !important;  
+    margin: 0 auto; 
+  }
 
 
 /* _________________________ */
@@ -317,52 +316,6 @@ a:hover {
     background-color: var(--clr-secondary)!important;
 }
 
-
-/* .subtitle {
-    max-width: 600px;
-}
-
-.btn-group {
-    margin: 2rem 0;
-    display: block !important;
-}
-
-.btn {
-    padding: 1rem 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 5px;
-    position: relative;
-    display: inline-block !important;
-    line-height: 1;
-}
-
-.btn + .btn {
-    margin-left: 1rem;
-}
-
-.btn-secondary {
-    background: var(--foreground);
-    color: var(--background);
-}
-
-.btn-accent {
-    background: var(--clr-accent);
-    color: var(--foreground);
-}
-
-.btn::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: var(--foreground) 2px solid;
-    left: 0;
-    top: 0;
-    border-radius: inherit;
-    z-index: -1;
-} */
-
 .intro {
     height: 80vh;
     padding: 10rem 0;
@@ -376,8 +329,31 @@ a:hover {
     grid-column: 2/3;
 }
 /* _________________________ */
-/* LUGARES.HTML */
-/* GRID SYSTEM */
+/* REVISTAS */
+.accordion{
+    --bs-accordion-btn-bg:var(--clr-secundary-2);
+    --bs-accordion-active-bg:var(--clr-secondary);
+    --bs-accordion-active-color: var(--clr-primary);
+    --bs-accordion-btn-focus-boxs-shadow:none;
+    --bs-accordion-btn-icon:magenta;
+}
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FEFAE4' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FEFAE4' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+}
+/* _________________________ */
+/* LUGARES */
+/* GRID MASON */
+.grid-wrapper > div > img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .grid-format {
     max-width: 1650px;
     margin: 0 auto;
@@ -422,6 +398,7 @@ footer {
     background-color: var(--clr-secondary);  
     color: var(--clr-primary);
     font-family: var(--ff-title);
+    margin-top: 1.5rem;
     }
 
 .footer-container-2 {
