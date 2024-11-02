@@ -78,7 +78,7 @@ a:hover {
 }
 /* _________________________ */
 /* BOTONES GENERALES */
-#element button, .carousel_gastronomia > div > a, .btn-lugar_revista, .btn-rrss {
+#element button, .btn-rrss, .carousel_gastronomia > div > a, .btn-lugar-revista, .btn-rrss {
     background-color: var(--clr-primary-2)!important;
     font-family: var(--ff-title) !important;
     border-style: none;
@@ -89,7 +89,7 @@ a:hover {
 #element button, .carousel_gastronomia > div > a, .btn-rrss {
     width: 100%;
 }
-.btn-lugar_revista {
+.btn-lugar-revista {
     width: 50%;
     align-items: center;
 }
