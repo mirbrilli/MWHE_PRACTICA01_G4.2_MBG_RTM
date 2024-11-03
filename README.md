@@ -3,5 +3,5 @@
 
 
 <!-- PREGUNTAS -->
-
-<!-- como reducir el margin preestablecido por bootstrap -->
+<!-- 04/11/2024 -->
+<!-- LOS "CARDS" DE GASTRONOMIA, ARTE ETC I cant edit the width, idk why tbh -->

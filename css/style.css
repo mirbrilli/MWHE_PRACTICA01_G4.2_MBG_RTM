@@ -16,20 +16,11 @@
     --ff-body: "Gloria Hallelujah", sans-serif;
 }
 
-/* Esto es para cambiar el color cuando tienes el ordenador en dark o light screen computer thingy */
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --background: var(--clr-primary);
-        --foreground: var(--clr-secondary);
-    }
-} */
-
 body {
     margin: 0;
     background-color: var(--clr-primary);
     color: var(--clr-secondary);
     font-family: var(--ff-body);
-    /* font-size: 18px; */
     line-height: 1.6;
 }
 
@@ -44,6 +35,7 @@ a {
     color: var(--clr-secondary);
     transition: 1s;
 }
+
 
 /* _________________________ */
 /* TEXTO */
@@ -76,9 +68,11 @@ p, a {
 a:hover {
     color: var(--clr-secundary-2);  
 }
+
+
 /* _________________________ */
 /* BOTONES GENERALES */
-#element button, .btn-rrss, .carousel_gastronomia > div > a, .btn-lugar-revista, .btn-rrss {
+#element button, .btn-rrss, .btn-gastronomia, .btn-lugar-revista, .btn-rrss {
     background-color: var(--clr-primary-2)!important;
     font-family: var(--ff-title) !important;
     border-style: none;
@@ -86,7 +80,8 @@ a:hover {
     border-radius: 1em;
     margin: 0 !important;
 }
-#element button, .carousel_gastronomia > div > a, .btn-rrss {
+
+#element button, .btn-gastronomia, .btn-rrss {
     width: 100%;
 }
 .btn-lugar-revista {
@@ -97,6 +92,8 @@ a:hover {
 .btn-gastronomia:hover,.btn-lugar_revista:hover {
     background-color: var(--clr-secondary)!important;
 }
+
+
 /* _________________________ */
 /* INDEX.HTML */
 /* HEADER */
@@ -118,6 +115,7 @@ a:hover {
     margin-left: 9rem; 
 } 
 
+
 /* TYPE JS Y BOTÓN */
 .type-container {
     position: absolute;
@@ -133,11 +131,13 @@ a:hover {
     background-color: var(--clr-secundary-2)!important;
 }
 
+
 /* _________________________ */
 /* MENU BAR */
 .mi-color-fondo {
     background-color: var(--clr-secondary)!important;
 }
+
 /* MENU LUGARES */
 .mi-color-fondo-2, .accordion-item {
     background-color: var(--clr-secundary-2)!important;
@@ -159,6 +159,8 @@ a:hover {
 .nav-link-2:hover {
     color: var(--clr-primary-2); 
 }
+
+
 /* _________________________ */
 /* LAS GATAS */
 .lasgatas {
@@ -177,50 +179,71 @@ a:hover {
 
 .modal-content {
     border-style: none;
-    height: 80vh;
 }
 
 .modal.show > .modal-dialog {
     border-style: none;
-    width: 80vh;
 }
 
 .modal-body {
     border-style: none;
-    
 }
+
 
 /* _________________________ */
 /* GASTRONOMÍA */
-.carousel_gastronomia {
+/* .cardgastronomia {
     width: 80%;
+} */
+.cardgastronomia > div > div > div > div > div {
+    width: 100%;
 }
-
-.carousel_gastronomia > div > div > div {
+.cardgastronomia > div > div > div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.carousel_gastronomia > div > div > div > h2 {
+
+
+.modal {
+    background-color: rgb(254 250 228 / 80%);
+}
+
+.modal-content {
+    border-radius: 1em;
+    background-color: var(--clr-secondary);
+    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.modal-backdrop.show {
+    opacity: 0 !important; /* Remove backdrop darkening */
+}
+
+.modal > div > div > h2 {
     color: var(--clr-primary);
     margin-top: 0 !important;
     display: flex;
     justify-content: center;
 }
 
-.carousel_gastronomia > div > div > div > img {
-    width: 70%;
+.modal > div > div > img {
+    width: 50%;
 }
 
-.carousel_gastronomia > div > div > div > p {
+.modal > div > div > p {
     color: var(--clr-primary);
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     font-size: 1.2rem;
+    text-align: left;
 }
 
-.carousel_gastronomia > div > div > div > a {
+.modal > div > div > a {
     background-color: var(--clr-primary-2)!important;
     font-family: var(--ff-title) !important;
     border-style: none;
@@ -232,24 +255,11 @@ a:hover {
     margin-top: 0.5rem !important;
 }
 
-.carousel_gastronomia > div > div > div > a:hover {
+.modal > div > div > a:hover {
     background-color: var(--clr-primary)!important;
     color: var(--clr-secondary)!important;
 }
 
-.modal {
-    background-color: rgb(254 250 228 / 80%);
-}
-
-.modal-content {
-    border-radius: 1em;
-    background-color: var(--clr-secondary);
-    padding: 1em;
-}
-
-.modal-backdrop.show {
-    opacity: 0 !important; /* Remove backdrop darkening */
-}
 
 /* BOTONES CAROUSEL*/
 .carousel-control-prev-icon {
@@ -268,6 +278,7 @@ a:hover {
     color: var(--clr-secondary);
 }
 
+
 /* _________________________ */
 /* ARTE y OCIO*/
 .texto_arte, .texto_ocio {
@@ -279,10 +290,11 @@ a:hover {
 .texto_arte > p, .texto_ocio > p {
     width: 50%;
 }
+
 .gatas-container-fluid, .ocio-container-fluid, .arte-container-fluid, .accordion {
     width: 80% !important;  
     margin: 0 auto; 
-  }
+}
 
 
 /* _________________________ */
@@ -328,6 +340,8 @@ a:hover {
 .intro > * {
     grid-column: 2/3;
 }
+
+
 /* _________________________ */
 /* REVISTAS */
 .accordion{
@@ -344,6 +358,8 @@ a:hover {
 .accordion-button:not(.collapsed)::after{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FEFAE4' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
 }
+
+
 /* _________________________ */
 /* LUGARES */
 /* GRID MASON */
@@ -392,6 +408,8 @@ a:hover {
     grid-column: span 2;
     grid-row: span 2;
 }
+
+
 /* _________________________ */
 /* FOOTER */
 footer {
@@ -426,15 +444,125 @@ footer a:hover {
 }
 
 
-
-
-
 /* _________________________ */
 /* MEDIA QUERIES */
-@media screen and (max-width: 768px) {
+@media (max-width: 1600px) {
+    /* LAS GATAS */
+    .container-fluid > div > div > a > p {
+        font-size: 2em !important;
+    }
+
+    /* VIDEOBLOGS */
+    .videoblogs > iframe {
+        height: 60vh;
+    }
+
+    /* CAROUSEL */
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+
+    .carousel_gastronomia > div > a {
+        font-size: 1.5em !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    /* LAS GATAS */
+    .px-4 {
+        padding-right: 0.4rem !important;
+        padding-left: 0.5rem !important;
+    }
+
+    .container-fluid > div > div > a > p {
+        font-size: 1.5em !important;
+    }
+
+    h1, h2 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    /* VIDEOBLOGS */
+    .videoblogs > iframe {
+        height: 40vh;
+        border-radius: 2em;
+    }
+
+    .videoblogs > a {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    /* CAROUSEL */
+    .carousel_gastronomia > div > a {
+        font-size: 1.2em !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* TEXTO */
+    .fs-2 {
+        font-size: 4rem !important;
+    }
+
     .grid-wrapper > div {
         grid-column: span 2;
         grid-row: span 2;
+    }
+
+    /* CARD */
+    .modal > div > div > p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* LAS GATAS */
+    .container-fluid {
+        padding: 1em !important;
+    }
+
+    .px-4 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    h1, h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* CARD */
+    .modal > div > div > a {
+        font-size: 1.3rem;
+        width: 70%;
+    }
+
+    .modal > div > div > img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* TEXTO */
+    .fs-2 {
+        font-size: 2.5rem !important;
+    }
+
+    /* CARD */
+    .modal-dialog {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* VIDEOBLOGS */
+    .videoblogs > iframe {
+        height: 30vh;
+    }
+
+    .videoblogs > a {
+        font-size: 1.3rem;
     }
 }
 

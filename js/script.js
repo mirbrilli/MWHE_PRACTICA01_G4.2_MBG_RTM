@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
    
 });
+
 // AOS JS
 window.onload = function () {
   "use strict";
