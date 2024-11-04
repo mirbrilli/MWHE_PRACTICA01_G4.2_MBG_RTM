@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    border:1px solid magenta;
+    /* border:1px solid magenta; */
 }
 
 :root {
@@ -127,6 +127,7 @@ a:hover {
     color:var(--clr-primary);
     font-family: var(--ff-body);
 } 
+
 #element button:hover{
     background-color: var(--clr-secundary-2)!important;
 }
@@ -192,9 +193,6 @@ a:hover {
 
 /* _________________________ */
 /* GASTRONOMÍA */
-/* .cardgastronomia {
-    width: 80%;
-} */
 .cardgastronomia > div > div > div > div > div {
     width: 100%;
 }
@@ -204,7 +202,10 @@ a:hover {
     justify-content: center;
 }
 
-
+.container > div > div {
+    padding-left: 1em;
+    padding-right: 1em;
+}
 
 .modal {
     background-color: rgb(254 250 228 / 80%);
@@ -221,7 +222,7 @@ a:hover {
 }
 
 .modal-backdrop.show {
-    opacity: 0 !important; /* Remove backdrop darkening */
+    opacity: 0 !important;
 }
 
 .modal > div > div > h2 {
@@ -359,6 +360,10 @@ a:hover {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FEFAE4' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
 }
 
+.accordion-header {
+    margin-top: 0 !important;
+}
+
 
 /* _________________________ */
 /* LUGARES */
@@ -457,12 +462,12 @@ footer a:hover {
         height: 60vh;
     }
 
-    /* CAROUSEL */
+    /* ACTIVIDADES */
     .mb-5 {
         margin-bottom: 2rem !important;
     }
 
-    .carousel_gastronomia > div > a {
+    .btn-gastronomia {
         font-size: 1.5em !important;
     }
 }
@@ -494,9 +499,14 @@ footer a:hover {
         width: 70%;
     }
 
-    /* CAROUSEL */
-    .carousel_gastronomia > div > a {
+    /* ACTIVIDADES */
+    .btn-gastronomia {
         font-size: 1.2em !important;
+    }
+
+    /* CARD */
+    .modal > div > div > p {
+        font-size: 1rem;
     }
 }
 
@@ -514,6 +524,11 @@ footer a:hover {
     /* CARD */
     .modal > div > div > p {
         font-size: 1rem;
+    }
+
+    /* ACTIVIDADES */
+    .btn-gastronomia {
+        font-size: 1.5em !important;
     }
 }
 
@@ -535,7 +550,7 @@ footer a:hover {
 
     /* CARD */
     .modal > div > div > a {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         width: 70%;
     }
 
@@ -552,8 +567,12 @@ footer a:hover {
 
     /* CARD */
     .modal-dialog {
-        width: 80%;
-        margin-left: 10%;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .modal > div > div > p {
+        font-size: 0.8rem;
     }
 
     /* VIDEOBLOGS */
