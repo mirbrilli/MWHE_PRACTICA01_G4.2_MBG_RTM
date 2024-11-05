@@ -154,10 +154,10 @@ a:hover {
     color: var(--clr-primary); 
     margin:0;
 }
-.nav-link:hover, .darkblue {
+a.nav-link:hover, .darkblue {
     color: var(--clr-secundary-2); 
 }
-.nav-link-2:hover {
+a.nav-link-2.active:hover {
     color: var(--clr-primary-2); 
 }
 
@@ -292,8 +292,8 @@ a:hover {
     width: 50%;
 }
 
-.gatas-container-fluid, .ocio-container-fluid, .arte-container-fluid, .accordion {
-    width: 80% !important;  
+.arte-container-fluid,.ocio-container-fluid,.revista-container-fluid,.accordion {
+    width: 85% !important;  
     margin: 0 auto; 
 }
 
