@@ -72,7 +72,7 @@ a:hover {
 
 /* _________________________ */
 /* BOTONES GENERALES */
-#element button, .btn-rrss, .btn-gastronomia, .btn-lugar-revista, .btn-rrss {
+.btn-rrss, .btn-gastronomia, .btn-lugar-revista {
     background-color: var(--clr-primary-2)!important;
     font-family: var(--ff-title) !important;
     border-style: none;
@@ -81,7 +81,7 @@ a:hover {
     margin: 0 !important;
 }
 
-#element button, .btn-gastronomia, .btn-rrss {
+.btn-gastronomia, .btn-rrss {
     width: 100%;
 }
 .btn-lugar-revista {
@@ -154,12 +154,13 @@ a:hover {
     color: var(--clr-primary); 
     margin:0;
 }
-a.nav-link:hover, .darkblue {
-    color: var(--clr-secundary-2); 
+.darkblue {
+    color: var(--clr-secundary-2);
 }
-a.nav-link-2.active:hover {
+.navbar-nav .nav-link.active:hover,.navbar-nav .nav-link-2.active:hover {
     color: var(--clr-primary-2); 
 }
+
 
 
 /* _________________________ */
@@ -280,6 +281,7 @@ a.nav-link-2.active:hover {
 }
 
 
+
 /* _________________________ */
 /* ARTE y OCIO*/
 .texto_arte, .texto_ocio {
@@ -287,7 +289,9 @@ a.nav-link-2.active:hover {
     flex-direction: column;
     align-items: center;
 }
-
+.skip-line {
+    display: inline;
+}
 .texto_arte > p, .texto_ocio > p {
     width: 50%;
 }
@@ -350,7 +354,6 @@ a.nav-link-2.active:hover {
     --bs-accordion-active-bg:var(--clr-secondary);
     --bs-accordion-active-color: var(--clr-primary);
     --bs-accordion-btn-focus-boxs-shadow:none;
-    --bs-accordion-btn-icon:magenta;
 }
 .accordion-button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FEFAE4' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
@@ -365,6 +368,7 @@ a.nav-link-2.active:hover {
 }
 
 
+
 /* _________________________ */
 /* LUGARES */
 /* GRID MASON */
@@ -376,7 +380,7 @@ a.nav-link-2.active:hover {
 }
 
 .grid-format {
-    max-width: 1650px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 1rem;
     padding-bottom: 4rem;
@@ -430,7 +434,8 @@ footer {
 
 footer h3, footer p {
     font-family: var(--ff-title);
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+    
 }
 
 footer a {
@@ -438,6 +443,9 @@ footer a {
     text-decoration: none;
     display: block;
     font-family: var(--ff-title);
+}
+footer a, footer p {
+    margin:0;
 }
 
 footer a:hover {
@@ -452,6 +460,21 @@ footer a:hover {
 /* _________________________ */
 /* MEDIA QUERIES */
 @media (max-width: 1600px) {
+    /* BOTONES GENERALES */
+    .btn-rrss, .btn-gastronomia, .btn-lugar-revista {
+        font-size: 1.5rem !important;
+    }
+    /* HEADER */
+    .line1,.line2 {
+        font-size: 5rem !important;
+}
+    .line2 {
+    margin-left: 6rem;
+}
+    .typejs {
+        font-size: 1.5rem !important;
+    }
+
     /* LAS GATAS */
     .container-fluid > div > div > a > p {
         font-size: 2em !important;
@@ -466,13 +489,89 @@ footer a:hover {
     .mb-5 {
         margin-bottom: 2rem !important;
     }
+}
 
-    .btn-gastronomia {
-        font-size: 1.5em !important;
+@media (max-width: 1400px) {
+    /* TEXTO */
+    .line1,.line2,.fs-2 {
+        font-size: 4rem !important;
     }
+    .fs-3 {
+        font-size: 3.5rem !important;
+    }
+
+    /* MENU ICONS */
+    .fa-3x {
+        font-size:2.5rem !important;
+    }
+    footer h3.fs-4 {
+        font-size: 1.8rem !important;
+    }
+    footer p, footer a  {
+        font-size: 1.5rem ;
+     }
+}
+@media (max-width: 1200px) {
+    /* BOTONES GENERALES */
+    .btn-rrss, .btn-gastronomia, .btn-lugar-revista {
+        font-size: 1.2rem !important;
+    
+    }
+     /* TEXTO */
+     .line1,.line2, .fs-2 {
+        font-size: 3rem !important;
+    }
+    .fs-3 {
+        font-size: 2.5rem !important; 
+    }
+    .line2 {
+        margin-left: 4rem;
+    }
+    .accordion-button {
+        font-size: 1.5rem !important;
+    }
+    /* MENU */
+    .fa-3x {
+        font-size:2rem !important;
+    }
+    .nav-link.active, .nav-link-2.active {
+        font-size: 2rem !important;
+    }
+
+
+    
+}
+@media (max-width: 1098px) {
+    /* GRID MASON */
+    .grid-wrapper > .full-row {
+        grid-column: 1 / -1;
+    }
+    .grid-wrapper > .full-row-tall {
+        grid-column: 1 / -1; 
+        grid-row: span 2;   
+    }
+    
 }
 
 @media (max-width: 1000px) {
+    /* BOTONES GENERALES */
+    .btn-rrss, .btn-gastronomia, .btn-lugar-revista {
+        font-size: 1rem !important;
+    }
+    /* TEXTO */
+    .fs-2 {
+        font-size: 3rem !important;
+    }
+    h1, h2 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .typejs {
+        font-size: 1rem !important;
+    }
+    .texto_arte > p, .texto_ocio > p {
+        width: 60%;
+    }
     /* LAS GATAS */
     .px-4 {
         padding-right: 0.4rem !important;
@@ -480,18 +579,13 @@ footer a:hover {
     }
 
     .container-fluid > div > div > a > p {
-        font-size: 1.5em !important;
-    }
-
-    h1, h2 {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        font-size: 1.5rem !important;
     }
 
     /* VIDEOBLOGS */
     .videoblogs > iframe {
         height: 40vh;
-        border-radius: 2em;
+        border-radius: 2rem;
     }
 
     .videoblogs > a {
@@ -499,53 +593,100 @@ footer a:hover {
         width: 70%;
     }
 
-    /* ACTIVIDADES */
-    .btn-gastronomia {
-        font-size: 1.2em !important;
-    }
-
     /* CARD */
     .modal > div > div > p {
         font-size: 1rem;
     }
+    /* GRID MASON */
+    .grid-wrapper > .full-row-tall {
+        grid-column: 1 / -1; 
+        grid-row: span 2;    
+    }
+    footer h3.fs-4 {
+        font-size: 1.5rem !important;
+    }
+    footer p, footer a {
+        font-size: 1.2rem;
 }
-
-@media (max-width: 768px) {
-    /* TEXTO */
-    .fs-2 {
-        font-size: 4rem !important;
+}
+@media (max-width: 800px) {
+    /* BOTONES GENERALES*/
+    .btn-rrss, .btn-gastronomia, .btn-lugar-revista {
+        font-size: 1rem !important;
     }
 
+    /* TEXTO */
+    .line1,.line2, .fs-2 {
+        font-size: 2.5rem !important;
+    }
+    .fs-3 {
+        font-size: 2.2rem !important;
+    }
+    .line2 {
+        margin-left: 3.5rem;
+    } 
+    
+    /* MENU */
+    .nav-link.active, .nav-link-2.active {
+        font-size: 1.5rem !important;
+    }
+   
+    /* GRID MASON */
     .grid-wrapper > div {
         grid-column: span 2;
         grid-row: span 2;
     }
+    .hidden {
+        display: none !important;
+    }
 
     /* CARD */
     .modal > div > div > p {
         font-size: 1rem;
     }
-
-    /* ACTIVIDADES */
-    .btn-gastronomia {
-        font-size: 1.5em !important;
+    /* FOOTER */
+     footer h3.fs-4 {
+        font-size: 1.2rem !important;
     }
+    footer p, footer a {
+        font-size: 1rem;
+        
+    } 
 }
 
 @media (max-width: 600px) {
+    /* HEADER */
+    .title_container {
+        top:47%;
+    }
+    /* MENU */
+    .fa-3x {
+        font-size:2rem !important;
+    }
+    .container-fluid.menu {
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+    }
+
     /* LAS GATAS */
     .container-fluid {
-        padding: 1em !important;
+        padding: 1rem !important;
     }
 
     .px-4 {
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
-
+    /* TEXTOS */
     h1, h2 {
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+    .accordion-button {
+        font-size: 1.2rem !important;
+    }
+    .skip-line {
+        display: block;
     }
 
     /* CARD */
@@ -560,11 +701,6 @@ footer a:hover {
 }
 
 @media (max-width: 576px) {
-    /* TEXTO */
-    .fs-2 {
-        font-size: 2.5rem !important;
-    }
-
     /* CARD */
     .modal-dialog {
         width: 70%;
@@ -573,6 +709,10 @@ footer a:hover {
 
     .modal > div > div > p {
         font-size: 0.8rem;
+    }
+    /* TEXTO */
+    .texto_arte > p, .texto_ocio > p {
+        width: 70%;
     }
 
     /* VIDEOBLOGS */
@@ -583,5 +723,46 @@ footer a:hover {
     .videoblogs > a {
         font-size: 1.3rem;
     }
+    
 }
-
+@media (max-width: 450px) {
+    /* BOTONES GENERALES */
+    .btn-gastronomia.header {
+        font-size: 0.8rem !important;
+    }
+    /* TEXTO */
+    .line1,.line2, .fs-2 {
+        font-size: 2rem !important;
+    }
+    .fs-3 {
+        font-size: 1.8rem !important;
+    } 
+    .typejs {
+        font-size: 0.7rem !important;
+    }
+    .accordion-button {
+        font-size: 1rem !important;
+    }
+    /* MENU */
+    .fa-3x {
+        font-size:1.5rem !important;
+    }
+    .container-fluid.menu {
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+    }
+}
+@media (max-width: 350px) {
+    /* HEADER */
+    .title_container {
+        top:43%;
+    }
+    .container-fluid.menu {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+    /* TEXTO */
+    .texto_arte > p, .texto_ocio > p {
+        width: 85%;
+    }
+}

@@ -16,19 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
       onComplete: function() {
         // Espera un segundo (1000 ms) y luego reemplaza el texto con un botón
         setTimeout(function() {
-          document.getElementById("element").innerHTML = '<button class="btn-gastronomia fs-4 " onclick="window.location.href=\'lasgatas.html\'">Iniciar la Aventura</button>';
+          document.getElementById("element").innerHTML = '<button class="btn-gastronomia header fs-5 " onclick="window.location.href=\'lasgatas.html\'">Iniciar la Aventura</button>';
         }, 1000);
       }
     });
-    // GRID LUGARES
-    ScrollReveal().reveal(".grid-wrapper > div", {
-      delay: 200,
-      distance: "50px",
-      interval: 100,
-      origin: "bottom",
-      scale: 0.9,
-    });
-   
+      
+});
+// GRID LUGARES
+ScrollReveal().reveal(".grid-wrapper > div", {
+  delay: 200,
+  distance: "50px",
+  interval: 100,
+  origin: "bottom",
+  scale: 0.9,
 });
 
 // AOS JS
