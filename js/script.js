@@ -2,10 +2,7 @@ const html = document.querySelector("html");
 html.setAttribute("data-bs-theme", "dark");
 
 document.addEventListener("DOMContentLoaded", () => {
-    // EVENTO Y EFECTO CON JQUERY
-    // $("#myBtn").click(function(){
-    //     alert("Has hecho click!");
-    // });
+
     // TYPE JS
     var typed = new Typed('#element', {
       strings: ['Hola!', 'Somos Miriam, Marina y Rosa', 'Unas chicas que viajan', 'y lo documentan', '¿Estás listo?'],
@@ -32,7 +29,22 @@ ScrollReveal().reveal(".grid-wrapper > div", {
 });
 
 // AOS JS
+function updateAOSAnimation() {
+  const element = document.getElementById('special-animation');
+  if (element) {
+    if (window.innerWidth < 768) {
+      element.setAttribute('data-aos', 'fade-left');
+    } else {
+      element.setAttribute('data-aos', 'fade-right');
+    }
+    AOS.refresh();
+  }
+}
+
+window.addEventListener('resize', updateAOSAnimation);
+window.addEventListener('load', updateAOSAnimation);
 window.onload = function () {
+
   "use strict";
   AOS.init({
       duration: 2000,
